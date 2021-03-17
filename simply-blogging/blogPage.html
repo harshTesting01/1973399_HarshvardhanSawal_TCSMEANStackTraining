@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="container-fluid">
+
+        <!-- Header -->
+        <div class="d-flex justify-content-center">
+            <h1>Simply Blogging</h1>
+        </div>
+
+        <!-- Nav Bar -->
+        <div>
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                <a href="#" class="nav-link"> About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Blog</a>
+                </li>
+            </ul>
+        </div>
+        <hr/>
+
+        <!-- Grid Layout for new Blogpost -->
+        <div class="container">
+            <form action="" method="get" class="form-group">
+                <!-- <label>UserName</label>
+                <input type="text" name="uname" class="form-control"><br/>
+                <label>Password</label>
+                <input type="password" name="pass" class="form-control"><br/>
+                <input type="submit" class="btn btn-primary"/>
+                <input type="reset" class="btn btn-secondary"/> -->
+                <!-- <hr/> -->
+                <div class="container-fluid">
+                    <form action="" class="form-group">
+                        <!-- <div class="row">
+                            <h2 class="col-4">Login Page</h2>
+                        </div> -->
+                        <div class="row">
+                            <label class="col-2">Title</label>
+                            <input type="text" name="title" class="col-6" id="title"/>
+                        </div>
+                        <div class="row row-m-t">
+                            <label class="col-2">Articles</label>
+                            <textarea name="pass" class="col-6" id="articles"></textarea>
+                        </div>
+                        <div class="row row-m-t">
+                            <label class="col-2">Add Image</label>
+                            <input type="file" name="image" class="col-6" id="image"></input>
+                        </div>
+                        <div class="row row-m-t">
+                            <input type="button" value="submit" class="btn btn-primary col-2" onclick="addBlog()"/>
+                            <div class="col-2"></div>
+                            <input type="reset" value="reset" class="btn btn-secondary col-md-2 col-md-offset-2"/>
+                            <input type="button" value="Delete LocalStorage" class="btn btn-primary col-2" onclick="clearLocalStorage()"/>
+                        </div>
+                    </form>
+                </div>
+            </form>
+        </div>
+        <hr/>
+
+
+        <!-- Grid Layout for Blogs -->
+        <div class="blog-container container">
+            <div class="row">
+                <h2>Blogs</h2>
+            </div>
+            <!-- <div class="row">
+                <div class="col-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                
+
+                
+            </div> -->
+            <div id="card-container">
+                
+            </div>
+        </div>
+
+    </div>
+</body>
+<script src="blog_js.js"></script>
+</html>

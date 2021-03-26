@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="container-fluid">
+
+        <!-- Header -->
+        <div class="d-flex justify-content-center">
+            <h1>Shopping Cart</h1>
+            <i class="fa fa-shopping-cart" aria-hidden="true">TM</i>
+        </div>
+
+        <hr/>
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="flexing">
+                        Cart Size : 
+                    </div>
+                    <div class="flexing" id="cartsize">cartsize</div>
+                </div>
+                <div class="col">
+                    
+                </div>
+                <div class="col">
+                    <div class="flexing">
+                        <a href="checkoutPage.html" target="_blank"><input type="button" value="CHECKOUT" class="btn btn-success" onclick="storeValues()"/></a>
+                        <input type="button" value="EMPTY CART" class="btn btn-danger" onclick="clearValues()"/>
+                    </div>
+                </div>
+            </div>
+            <div class="row spaces">
+                
+            </div>
+        </div>
+
+        <div>
+            <div class="container">
+                <div class="row">
+                    <div class="col item">
+                        <div class="row">
+                            <div class="flexing">
+                                Name: 
+                            </div>
+                            <div class="flexing" id="name1">Iphone</div>
+                        </div>
+                        <div class="row">
+                            <div class="flexing">
+                                Price: 
+                            </div>
+                            $<div class="flexing" id="price1">1000</div>
+                        </div>
+                        <div class="row">
+                            <div class="btn-center">
+                                <input type="button" value="ADD" class="btn btn-primary" onclick="addItem1()"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col item">
+                        <div class="row">
+                            <div class="flexing">
+                                Name: 
+                            </div>
+                            <div class="flexing" id="name2">Samsung TV</div>
+                        </div>
+                        <div class="row">
+                            <div class="flexing">
+                                Price: 
+                            </div>
+                            $<div class="flexing" id="price2">2000</div>
+                        </div>
+                        <div class="row">
+                            <div class="btn-center">
+                                <input type="button" value="ADD" class="btn btn-primary" onclick="addItem2()"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col item">
+                        <div class="row">
+                            <div class="flexing">
+                                Name: 
+                            </div>
+                            <div class="flexing" id="name3">Toothbrush</div>
+                        </div>
+                        <div class="row">
+                            <div class="flexing">
+                                Price: 
+                            </div>
+                            $<div class="flexing" id="price3">10</div>
+                        </div>
+                        <div class="row">
+                            <div class="btn-center">
+                                <input type="button" value="ADD" class="btn btn-primary" onclick="addItem3()"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col item">
+                        <div class="row">
+                            <div class="flexing" >
+                                Name: 
+                            </div>
+                            <div class="flexing" id="name4">Gold</div>
+                        </div>
+                        <div class="row">
+                            <div class="flexing">
+                                Price: 
+                            </div>
+                            $<div class="flexing" id="price4">10000</div>
+                        </div>
+                        <div class="row">
+                            <div class="btn-center">
+                                <input type="button" value="ADD" class="btn btn-primary" onclick="addItem4()"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col item">
+                        <div class="row">
+                            <div class="flexing">
+                                Name: 
+                            </div>
+                            <div class="flexing" id="name5">Fruits</div>
+                        </div>
+                        <div class="row">
+                            <div class="flexing">
+                                Price: 
+                            </div>
+                            $<div class="flexing" id="price5">5</div>
+                        </div>
+                        <div class="row">
+                            <div class="btn-center">
+                                <input type="button" value="ADD" class="btn btn-primary" onclick="addItem5()"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col item">
+                        <div class="row">
+                            <div class="flexing">
+                                Name: 
+                            </div>
+                            <div class="flexing" id="name6">Books</div>
+                        </div>
+                        <div class="row">
+                            <div class="flexing">
+                                Price: 
+                            </div>
+                            $<div class="flexing" id="price6">30</div>
+                        </div>
+                        <div class="row">
+                            <div class="btn-center">
+                                <input type="button" value="ADD" class="btn btn-primary" onclick="addItem6()"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col item">
+                        <div class="row">
+                            <div class="flexing">
+                                Name: 
+                            </div>
+                            <div class="flexing" id="name7">Laptop</div>
+                        </div>
+                        <div class="row">
+                            <div class="flexing">
+                                Price: 
+                            </div>
+                            $<div class="flexing" id="price7">2000</div>
+                        </div>
+                        <div class="row">
+                            <div class="btn-center">
+                                <input type="button" value="ADD" class="btn btn-primary" onclick="addItem7()"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col item">
+                        <div class="row">
+                            <div class="flexing">
+                                Name: 
+                            </div>
+                            <div class="flexing" id="name8">Movie</div>
+                        </div>
+                        <div class="row">
+                            <div class="flexing">
+                                Price: 
+                            </div>
+                            $<div class="flexing" id="price8">12</div>
+                        </div>
+                        <div class="row">
+                            <div class="btn-center">
+                                <input type="button" value="ADD" class="btn btn-primary" onclick="addItem8()"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col item">
+                        <div class="row">
+                            <div class="flexing">
+                                Name: 
+                            </div>
+                            <div class="flexing" id="name9">Dinner</div>
+                        </div>
+                        <div class="row">
+                            <div class="flexing">
+                                Price: 
+                            </div>
+                            $<div class="flexing" id="price9">40</div>
+                        </div>
+                        <div class="row">
+                            <div class="btn-center">
+                                <input type="button" value="ADD" class="btn btn-primary" onclick="addItem9()"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+<script src="cart_js.js"></script>
+</html>

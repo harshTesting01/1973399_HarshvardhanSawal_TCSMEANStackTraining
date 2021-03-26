@@ -1,0 +1,19 @@
+.item{
+    border: solid black 2px;
+    margin: 15px;
+    border-radius: 10px;
+}
+
+.row{
+    margin: 2px;
+}
+
+.flexing{
+    flex: 1;
+    /* border: solid red 2px;
+    border-radius: 10px; */
+}
+
+.btn-center{
+    text-align: center;
+}

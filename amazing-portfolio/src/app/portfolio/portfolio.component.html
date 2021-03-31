@@ -1,0 +1,49 @@
+<div>
+    <h2>My Portfolio</h2>
+    <hr/>
+    <p>Welcome {{username}}</p>
+    <div>
+        <mat-card>
+            <mat-card-title>Login</mat-card-title>
+            <mat-card-content>
+                <form [formGroup]="form" (ngSubmit)="submit()">
+                <p>
+                    <mat-form-field>
+                        <input type="text" matInput placeholder="Contact Name" formControlName="contname" required>
+                    </mat-form-field>
+                </p>
+    
+                <p>
+                    <mat-form-field>
+                        <input type="tel" matInput placeholder="Phone Number" formControlName="phonum" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                    </mat-form-field>
+                </p>
+    
+                <div class="button">
+                    <button mat-raised-button type="submit" color="accent">Save</button> &nbsp;
+                </div>
+    
+                </form>
+            </mat-card-content>
+        </mat-card>
+    </div>
+    <div>
+        <form>
+            <hr/>
+            <table id="contactList">
+               <thead>
+                   <tr>
+                       <th>Name</th>
+                       <th>Phone Number</th>
+                   </tr>
+               </thead> 
+               <tbody>
+        
+               </tbody>
+            </table>
+        </form>
+    </div>
+    <div>
+        <button mat-raised-button color="warn" (click)="signOut()">Sign out</button>
+    </div>
+</div>

@@ -73,6 +73,7 @@ export class PortfolioComponent implements OnInit {
 
   signOut(){
     sessionStorage.clear();
+    this.route.navigate(["login"]);
   }
 
 }

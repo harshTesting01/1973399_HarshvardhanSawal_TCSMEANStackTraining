@@ -1,0 +1,29 @@
+<div>
+    <form #userRef="ngForm" (ngSubmit)="onSubmit()" >
+        <div *ngFor="let question of allQuestions">
+            <label>{{question.questionId}}.</label>&nbsp;
+            <label>{{question.questionText}}</label>
+            <!-- <ul>
+                <li *ngFor="let options of question.options">
+                    <input type="radio" [(ngModel)]="selectedAnswer" name="list_name" value="{{options.optionValue}}" (change)="onItemChange(options)"/> 
+          {{options.optionText}}
+                </li>
+            </ul> -->
+            
+            <mat-radio-group required>
+                <div *ngFor="let options of question.options; let i = index" >
+                    <!-- <label>{{options.optionValue}}</label> -->
+                    <mat-radio-button name="option_{{question}}_{{options}}" [value]="i" [checked]="i === 0" (change)="onItemChange(question.questionId, options.optionValue)"><label>{{options.optionText}}</label></mat-radio-button>
+                </div><br/>
+            </mat-radio-group>
+            
+            
+        </div>
+        <!-- <input type="submit" value="submit" [disabled]="!userRef.valid"/> -->
+        <button mat-raised-button color="primary" type="submit">Submit</button>
+    </form>
+    <hr/>
+    <div>
+        Final result: {{correctAnswersCount}} / {{totalQuestions}}
+    </div>
+</div>

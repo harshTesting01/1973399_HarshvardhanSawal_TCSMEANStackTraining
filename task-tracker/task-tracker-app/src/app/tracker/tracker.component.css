@@ -1,0 +1,14 @@
+mat-form-field {
+    background-color: transparent;
+}
+
+table {
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-evenly; */
+    width: auto;
+}
